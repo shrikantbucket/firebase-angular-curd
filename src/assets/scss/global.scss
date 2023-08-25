@@ -1,0 +1,84 @@
+
+@import 'base';
+
+// Basic Setup
+
+
+.container,.body-container{
+    max-width: 1240px;
+    margin-left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    @media (max-width:1239px) {
+        @include paddingX(1rem);
+    }
+}
+
+
+.align-right{
+    text-align: right;
+}
+.align-center{
+    text-align: center;
+}
+
+// $size-xs:pxtorem(8);   // 8px
+// $size-s:pxtorem(12);   // 12px
+// $size-m:pxtorem(16);   // 16px
+// $size-l:pxtorem(20);   // 20px
+// $size-xl:pxtorem(24);  // 24px
+
+
+// Margin Spacing
+.m-1{ margin: $size-xs; }
+.m-2{ margin: $size-s; }
+.m-3{ margin: $size-m; }
+.m-4{ margin: $size-l; }
+.m-5{ margin: $size-xl; }
+.mt-1{ margin-top: $size-xs; }
+.mt-2{ margin-top: $size-s; }
+.mt-3{ margin-top: $size-m; }
+.mt-4{ margin-top: $size-l; }
+.mt-5{ margin-top: $size-xl; }
+.mb-1{ margin-bottom: $size-xs; }
+.mb-2{ margin-bottom: $size-s; }
+.mb-3{ margin-bottom: $size-m; }
+.mb-4{ margin-bottom: $size-l; }
+.mb-5{ margin-bottom: $size-xl; }
+.mx-1{ margin-left: $size-xs; margin-right: $size-xs; }
+.mx-2{ margin-left: $size-s; margin-right: $size-s; }
+.mx-3{ margin-left: $size-m; margin-right: $size-m; }
+.mx-4{ margin-left: $size-l; margin-right: $size-l; }
+.mx-5{ margin-left: $size-xl; margin-right: $size-xl; }
+.my-1{ margin-top: $size-xs; margin-bottom: $size-xs; }
+.my-2{ margin-top: $size-s; margin-bottom: $size-s; }
+.my-3{ margin-top: $size-m; margin-bottom: $size-m; }
+.my-4{ margin-top: $size-l; margin-bottom: $size-l; }
+.my-5{ margin-top: $size-xl; margin-bottom: $size-xl; }
+
+// Padding Spacing
+.p-1{ padding: $size-xs; }
+.p-2{ padding: $size-s; }
+.p-3{ padding: $size-m; }
+.p-4{ padding: $size-l; }
+.p-5{ padding: $size-xl; }
+.pt-1{ padding-top: $size-xs; }
+.pt-2{ padding-top: $size-s; }
+.pt-3{ padding-top: $size-m; }
+.pt-4{ padding-top: $size-l; }
+.pt-5{ padding-top: $size-xl; }
+.pb-1{ padding-bottom: $size-xs; }
+.pb-2{ padding-bottom: $size-s; }
+.pb-3{ padding-bottom: $size-m; }
+.pb-4{ padding-bottom: $size-l; }
+.pb-5{ padding-bottom: $size-xl; }
+.px-1{ padding-left: $size-xs;padding-right: $size-xs; }
+.px-2{ padding-left: $size-s; padding-right: $size-s; }
+.px-3{ padding-left: $size-m; padding-right: $size-m; }
+.px-4{ padding-left: $size-l; padding-right: $size-l; }
+.px-5{ padding-left: $size-xl;padding-right: $size-xl; }
+.py-1{ padding-top: $size-xs;padding-bottom: $size-xs; }
+.py-2{ padding-top: $size-s; padding-bottom: $size-s; }
+.py-3{ padding-top: $size-m; padding-bottom: $size-m; }
+.py-4{ padding-top: $size-l; padding-bottom: $size-l; }
+.py-5{ padding-top: $size-xl;padding-bottom: $size-xl; }

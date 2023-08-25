@@ -1,0 +1,199 @@
+
+
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    margin-bottom: pxtorem(5);
+    label{
+        @include gotham_medium;
+        @include font-size(pxtorem(14));
+        color: $black_600_color;
+    }
+    .form-control{
+        height: 3rem;
+        border-radius: pxtorem(6);
+        border: 1px solid $black_400_color;
+        @include paddingX(1rem);
+        @include paddingY(1rem);
+        @include font_regular();
+        letter-spacing: pxtorem(1);
+       
+
+        &:focus,&:active{
+           // outline: unset !important;
+
+        }
+        &::placeholder{
+            @include font_regular();
+            @include font-size($h4_size);
+            color: #706a6a;
+        }
+
+        &[type='checkbox'],&[type='radio']{
+            position: absolute;
+            z-index: -1;
+            width: 0px;
+            height: 0px;
+            opacity: 0;
+        }
+
+        &[type='password'].custom-disc{
+            letter-spacing: pxtorem(1);
+            font-size: 1.5rem;
+
+            &::placeholder{
+                letter-spacing: pxtorem(1);
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+.radio-control{
+    margin-top: 1rem;
+    label{
+        @include font_regular;
+        @include font-size(pxtorem(14));
+        color: #706A6A;
+        position: relative;
+        padding-left: pxtorem(30) ;
+        cursor: pointer;
+
+        &:before{
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: pxtorem(22);
+            height: pxtorem(22);
+            border: 1px solid $black_400_color;
+            
+            border-radius: pxtorem(3);
+        }
+
+        &::after{
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(312deg);
+            width: pxtorem(15);
+            height: pxtorem(8);
+            margin-left: pxtorem(3);
+            margin-top: pxtorem(-2);
+            border-left: pxtorem(3) solid $white_color;
+            border-bottom: pxtorem(3) solid $white_color;
+            display: none;
+        }
+    }
+
+    [type='checkbox'], [type='radio']{
+        &:checked + label{
+            &::before{
+                background-color: $red_medium_color;
+                border-color: $red_medium_color;
+            }
+            &::after{
+                display: block;
+            }
+        }
+    }
+}
+.search-form{
+    width: 10rem;
+    height: 2.25rem;
+    .form-group{
+        position: relative;
+
+    }
+    .form-control{
+        width: 100%;
+        height: 100%;
+        padding: 0.375rem 2.300rem 0.375rem 0.563rem;
+        font-size: $h4_size;
+        height: 2.25rem;
+        @include gotham_light();
+        @include font-size($h4_size);
+        color: $black_800_color;
+        background-color: $black_200_color;
+        border: unset;
+        &::placeholder{
+            @include gotham_light();
+            @include font-size($h4_size);
+            color: $black_800_color;
+        }
+    }
+    .btn-icon{
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        z-index: 5;
+        right: 0.438rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        border-radius: unset;
+        cursor: pointer;
+        
+        svg{
+            position: absolute;
+
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+
+
+
+.subscribe-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: stretch;
+    background-color: $white_color;
+    height: pxtorem(48);
+    border: pxtorem(2) solid $white_color;
+    border-radius: pxtorem(3);
+    overflow: hidden;
+    margin-bottom: pxtorem(40);
+
+    .icon{
+        margin-left: pxtorem(12);
+        margin-right: pxtorem(8);
+
+    }
+    .input-control{
+        flex: 1;
+        height: 100%;
+        background-color: transparent;
+        border: unset;
+        border-radius: unset;
+        @include font_medium();
+        font-size: pxtorem(14);
+        &::placeholder{
+            color: $red_medium_color;
+        }
+
+        &:focus,&:active{
+            outline: unset !important;
+        }
+    }
+    .btn-subscribe{
+        height: 100%;
+        border-radius: 0px;
+        border: unset;
+        font-size: pxtorem(14);
+        background-color: $red_medium_color;
+        color: $white_color;
+        @include padding(pxtorem(12));
+        cursor: pointer;
+    }
+
+    
+}

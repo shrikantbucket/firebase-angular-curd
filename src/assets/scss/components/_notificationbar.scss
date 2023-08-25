@@ -1,0 +1,12 @@
+.notification-bar{
+    background-color: $red_medium_color;
+    @include paddingY($size-m);
+    @include flex("center","center");
+
+    .notification-body{
+        h1,.heading_1,h2,.heading_2,h3,.heading_3,h4,.heading_4a,h5,.heading_4b{
+            color:$white_color;
+            @include font-size($size-m);  
+        }
+    }
+}

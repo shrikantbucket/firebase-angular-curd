@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "firebase-angular-curd": {
+      "hosting": {
+        "firebase-angular-curd": [
+          "neostore-live"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "firebase-angular-curd"
+  }
+}

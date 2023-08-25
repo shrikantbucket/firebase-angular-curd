@@ -1,0 +1,35 @@
+
+
+.btn{
+    @include font_regular;
+    @include font-size(pxtorem(14));
+    @include paddingX(pxtorem(20));
+    @include paddingY(pxtorem(10));
+    height: pxtorem(36);
+    border: unset;
+    cursor: pointer;
+
+    
+    &.btn-primary{
+        background-color: $red_medium_color;
+        color: $white_color;
+        border-radius: 2px;
+        
+    }
+    &:hover{
+        background-color: $red_dark_color;
+    }
+
+}
+.text-link{
+        @include gotham_light;
+        @include font-size(pxtorem(12));
+        text-decoration: underline !important;
+        color: #585858;
+    }
+.btn-group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: pxtorem(12);
+}

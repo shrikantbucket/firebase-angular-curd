@@ -1,0 +1,69 @@
+
+
+
+.login-section{
+    display: flex;
+    flex-wrap: wrap;
+    @include marginY(1rem);
+
+    .left-screen{
+        @include paddingY(pxtorem(16));
+        flex: 1;
+
+        .image-group-center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include marginY(5rem);
+
+        }
+    }
+
+    .right-screen{
+        flex:1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .login{
+            width: pxtorem(451);
+            padding: pxtorem(40);
+            box-shadow: 0rem 0rem pxtorem(15) pxtorem(2) rgba(0, 0, 0, 0.06);
+            border-radius: pxtorem(20);
+
+
+            .title{
+                color: $red_color;
+                @include font_medium;
+                @include font-size(pxtorem(24));
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: pxtorem(30);
+                margin-bottom: pxtorem(30);
+            }
+
+            .btn-group{
+                margin-top: pxtorem(50);
+                margin-bottom: pxtorem(30);
+            }
+            .btn{
+                width: pxtorem(271);
+            
+            }
+
+            .new-signup{
+                @include font_regular;
+                @include font-size(pxtorem(14));
+                margin-bottom: pxtorem(30);
+
+                .text-link{
+                    @include gotham_light;
+                    @include font-size(pxtorem(16));
+                    color: $black_600_color;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,47 @@
+
+/*===================================================
+    Color Variable
+====================================================*/
+$red_dark_color:#9e0100;
+$red_medium_color:#BB0100;
+$red_color:#e91b1a;
+$red_light_color:#fe3f3f;
+$yellow_color:#ffb900;
+$black_900_color:#111111;
+$black_800_color:#282627;
+$black_700_color:#333333;
+$black_600_color:#4f4f4f;
+$black_500_color:#7f7f7f;
+$black_400_color:#bfbfbf;
+$black_200_color:#ededed;
+$white_color:#ffffff;
+
+
+
+
+
+
+$primary_color: $red_color;
+$secondary_color: #111;
+
+$dark_color:#232323;
+$light_color: #fff;
+$black_color: $dark_color;
+$white_color:$light_color;
+
+
+$size-xs:pxtorem(8);   // 8px
+$size-s:pxtorem(12);   // 12px
+$size-m:pxtorem(16);      // 16px
+$size-l:pxtorem(20);   // 20px
+$size-xl:pxtorem(24);   // 24px
+
+
+$h1_size:pxtorem(20);   // 20px
+$h2_size:pxtorem(18);  // 18px
+$h3_size:pxtorem(16);   // 16px
+$h4_size:pxtorem(14);  // 14px
+$h5_size:pxtorem(12);   // 12px
+$h6_size:pxtorem(8);  // 8px
+
+

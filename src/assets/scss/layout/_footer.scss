@@ -1,0 +1,73 @@
+
+.footer-section{
+    background-color: $black_900_color;
+    
+    color: $white_color;
+
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-aboutus{
+        @include paddingY(pxtorem(50));
+        .neo-brand-logo{
+            margin-bottom: pxtorem(33);
+        }
+
+        p{
+            @include gotham_light;
+            color: $white_color;
+            font-weight: 300;
+            font-size: pxtorem(14);
+            margin-bottom: pxtorem(9);
+            letter-spacing: pxtorem(1);
+        }
+
+        .mb-2{
+            margin-bottom: pxtorem(20);
+        }
+
+
+        .socialmedia-list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: pxtorem(10);
+        }
+    }
+    
+    .right-secreen{
+        @include paddingY(pxtorem(50));
+        display: flex;
+        flex-wrap: wrap;
+        gap: pxtorem(46);
+        @media (max-width:1200px) {
+            gap:pxtorem(20);
+        }
+        .footer-list{
+            h3{
+                color: $white_color;
+                font-size: pxtorem(15);
+                margin-bottom: pxtorem(40);
+                letter-spacing: pxtorem(1);
+                text-transform: uppercase;
+            }
+            .nav-list{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.8rem;
+                .nav-link{
+                    color: $white_color;
+                    font-weight: 300;
+                    letter-spacing: pxtorem(1);
+                }
+            }
+        }
+    }
+}
+
+
+

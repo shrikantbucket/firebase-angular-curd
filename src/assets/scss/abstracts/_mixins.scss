@@ -1,0 +1,128 @@
+
+
+
+@mixin  primary_font {
+    font-family: 'Gotham' !important;
+}
+@mixin gotham_light {
+    @include primary_font();
+    font-weight: 300;
+}
+@mixin gotham_regular {
+    @include primary_font();
+    font-weight: 300;
+}
+@mixin gotham_bold {
+    @include primary_font();
+    font-weight: 600;
+}
+@mixin  gotham_black {
+    @include primary_font();
+    font-weight: 700;
+}
+@mixin  gotham_book {
+    @include primary_font();
+    font-weight: 400;
+}
+@mixin  gotham_medium {
+    @include primary_font();
+    font-weight: 500;
+}
+
+@mixin font-size($value) {
+    font-size: $value;
+    line-height: $value;
+}
+
+
+@mixin font_bold{
+    @include gotham_black();
+    @include font-size($size-m);
+}
+@mixin font_book{
+    @include gotham_book();
+    @include font-size($size-m);
+}
+@mixin font_medium{
+    @include gotham_medium();
+    @include font-size($size-s);
+}
+@mixin font_regular{
+    @include gotham_book();
+    @include font-size($size-s);
+}
+
+
+
+@function pxtorem($px){
+    @return ($px / 16) + rem;
+}
+
+
+
+@mixin padding($space) {
+    padding: $space;
+}
+
+@mixin paddingX($space) {
+    padding-left: $space;    
+    padding-right: $space;    
+} 
+@mixin paddingY($space) {
+    padding-top: $space;    
+    padding-bottom: $space;    
+} 
+
+
+
+@mixin margin($space){
+    margin: $space;
+}
+@mixin marginX($space) {
+    margin-left: $space;
+    margin-right: $space;
+}
+@mixin marginY($space) {
+    margin-top: $space;
+    margin-bottom: $space;
+}
+
+
+
+
+
+@function flex-value($flex_position) {
+    @if $flex_position == center{
+        @return center; 
+    }@else if $flex_position == left{
+        @return flex-start;
+    }@else if $flex_position == top{
+        @return flex-start;
+    }@else if $flex_position == right{
+        @return flex-end;
+    }@else if $flex_position == bottom{
+        @return flex-end;
+    }@else{
+        @return flex-start;
+    }
+}
+
+@mixin flex($h,$v) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-value($h);
+    align-items: flex-value($v);
+}
+@mixin inline-flex($h,$v) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-value($h);
+    align-items: flex-value($v);
+}
+
+
+
+
+
+
+

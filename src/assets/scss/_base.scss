@@ -1,0 +1,41 @@
+
+
+// import all the files
+
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'base/typography';
+@import 'base/reset';
+
+
+ @import 'components/notificationbar';
+ @import 'components/navbar';
+ @import 'components/form';
+ @import 'components/button';
+// @import 'components/tablelist';
+// @import 'components/language_area'; 
+// @import 'components/number_dailpad';
+// @import 'components/promotion';
+// @import 'components/sarvices';
+// @import 'components/loading';
+// @import 'components/tabcontent';
+// @import 'components/form_control';
+// @import 'components/table';
+// @import 'components/paymethod';
+// @import 'components/insert_cash';
+// @import 'components/succsss';
+// @import 'components/popup';
+// @import 'components/keyboard';
+// @import 'components/video_popup';
+ @import 'components/brandlogo';
+
+
+
+ @import 'pages/login';
+// @import 'pages/outofservice';
+// @import 'pages/outofservice2';
+
+
+// @import 'layout/header';
+ @import 'layout/footer';
+
