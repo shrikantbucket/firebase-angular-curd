@@ -1,0 +1,97 @@
+.tooltip{
+    position: relative;
+    display: inline-block;
+    padding: 1rem;
+    background-color: red;
+    margin-left: 300px;
+    margin-bottom: 300px;
+    
+
+    .tooltiptext{
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        background-color: $black_900_color;
+        color: $white_color;
+        @include primary_font();
+        position: absolute;
+        top: 50%;
+        transform: translate(0%,-50%);
+        left: calc(100% + 0.5rem);
+        width: fit-content;
+        text-align: center;
+        white-space: nowrap; 
+        visibility: hidden;  
+        opacity: 0;  
+        transition: 0.5s ease-in; 
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translate(0%,-50%);
+        left: calc(100%);
+        margin-left: -0.5rem;
+        border-width: 0.5rem;
+        border-style: solid;
+        border-color: transparent black transparent transparent;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s ease-in;
+    }
+
+
+    &.tooltip-top{
+        .tooltiptext{
+            top: calc(-100% - 1rem);
+            left: 50%;
+            transform: translate(-50%,0%);
+        }
+        &::after{
+            top: 0rem;
+            transform: translate(0%,-50%);
+            left: calc(50%);
+            border-color: black transparent transparent transparent;
+        }
+    }
+    &.tooltip-left{
+        .tooltiptext{
+            top: 50%;
+            transform: translate(-100%,-50%);
+            left: -0.5rem;
+        }
+        &::after{
+            top: 50%;
+            transform: translate(0%,-50%);
+            left: calc(0%);
+            border-color:  transparent transparent transparent black;
+        }
+    }
+    &.tooltip-bottom{
+        .tooltiptext{
+            top: calc(100% + 0.5rem);
+            left: 50%;
+            transform: translate(-50%,0%);
+        }
+        &::after{
+            top: 100%;
+            transform: translate(0%,-50%);
+            left: calc(50%);
+            border-color: transparent transparent black transparent;
+        }
+    }
+
+    &:hover{
+        
+        &::after{
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .tooltiptext{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+
+}

@@ -17,6 +17,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './component/verify-email/verify-email.component';
+import { TooltipComponent } from './component/tooltip/tooltip.component';
 
 
 
@@ -31,6 +32,7 @@ import { VerifyEmailComponent } from './component/verify-email/verify-email.comp
     NavbarComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
+    TooltipComponent,
   ],
   imports: [
     BrowserModule,
